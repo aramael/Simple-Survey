@@ -24,6 +24,8 @@ Just Open `resources/config.php` and change the following constants:
 10. `$question_1` -- *The first biased question*
 11. `$question_2` -- *The second biased question*
 
+Also run `resources/start.sql` to create the appropriate databases
+
 Running the Survey
 ----------------
 
