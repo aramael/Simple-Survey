@@ -16,6 +16,7 @@ $control_question = CONTROL_QUESTION;
 $project_manager = "";
 $project_manager_email = "";
 $project_name = "";
+$project_url = "";
 
 /*			  PDO DB INFORMATION
 ***********************************************/

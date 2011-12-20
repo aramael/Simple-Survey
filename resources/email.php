@@ -33,7 +33,7 @@ foreach($data as $user){
 			
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSERT INTRODUCTION We estimate that it will take you approximately less than a minute to complete the survey. Simply click on the link below, or cut and paste the entire URL into your browser to access the survey:</p>
 			
-			<p><a href='http://statistics.aramael.com/?a=".base64_encode($user->subjectID)."'>http://statistics.aramael.com/?a=".base64_encode($user->subjectID)."</a></p>
+			<p><a href='".$project_url."/?a=".base64_encode($user->subjectID)."'>".$project_url."/?a=".base64_encode($user->subjectID)."</a></p>
 			
 			<p>We would appreciate your response by December 23rd 2011.<br/>
 			Your input is very important to us and will be kept strictly confidential and anonymous (used only for the purposes of research for this project).<br/>
