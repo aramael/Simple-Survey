@@ -1,0 +1,22 @@
+# Disable Directory Listings in this Directory and Subdirectories  
+# This will hide the files from the public unless they know direct URLs  
+Options -Indexes
+
+# Disable Register Globals in PHP
+# Disables $_GET['var'] = $var
+php_flag register_globals 0
+
+# Disable Magic Quotes in PHP
+# Disables ' = \'
+php_flag magic_quotes_gpc 0
+php_flag magic_quotes_runtime 0
+
+# Rewrite URL's
+RewriteEngine On
+
+RewriteRule ^404/?$ errors/404.html [NC]
+
+# Enable Error Documents
+# (404,File Not Found) | (403,Forbidden) | (500,Internal Server Error)
+ErrorDocument 404 /404
+ErrorDocument 403 /404
